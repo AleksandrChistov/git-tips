@@ -15,3 +15,14 @@
 
 ## Лог
 Команда ```git log``` выводит информацию о коммитах.
+
+# HEAD
+Это файл в папке ```.git```, который указывает на файл, в котором хранится хеш на последний коммит.
+
+# Статусы файлов
+
+```mermaid 
+graph LR;
+  untracked/modified -- "git add" --> staged;
+  staged    -- "git commit -m"     --> tracked/comitted;
+``` 
